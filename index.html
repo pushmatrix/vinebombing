@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title></title>
+  <script src="jquery.js" ></script>
+  <script type="text/javascript" src="shim.js"></script>
+  <script type="text/javascript" src="dat.gui.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="seriously.js"></script>
+  <script src="seriously.chroma.js"></script>
+  <script src="seriously.tvglitch.js"></script>
+
+  <style type="text/css">
+    body {
+      margin: 0;
+      background: black;
+    }
+
+    #container {
+      margin: 0px auto;
+      width: 800px;
+      height: 800px;
+    }
+
+    video, canvas {
+      position: absolute;
+      width: 800px;
+      height: 800px;
+    }
+
+    #canvas {
+      z-index: 1000;
+    }
+
+    #webcam {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <video class="vine" loop ></video>
+    <video class="vine" loop style="display: none"></video>
+    <canvas id="canvas" width=800 height=800></canvas>
+    <video id="webcam" width=800 height=800></video>
+  </div>
+</body>
+</html>
